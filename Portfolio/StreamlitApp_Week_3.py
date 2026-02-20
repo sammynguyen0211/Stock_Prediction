@@ -59,9 +59,11 @@ MODEL_INFO = {
     "endpoint": aws_endpoint,
     "explainer": 'explainer.shap',
     "pipeline": 'finalized_model.tar.gz',
-    "keys": ['AAPL', 'NVDA', 'TSLA','AMD','META','DEXJPUS', 'DEXUSUK','SP500', 'NASDAQCOM', 'VIXCLS'],
+    "keys": ['AAPL_return', 'TSLA_return', 'AMD_return', 'META_return', 'range',
+       'gap', 'momentum_10', 'volatility_14'],
     "inputs": [{"name": k, "type": "number", "min": -1.0, "max": 1.0, "default": 0.0, "step": 0.01} 
-               for k in ['AAPL', 'NVDA', 'TSLA','AMD','META','DEXJPUS', 'DEXUSUK','SP500', 'NASDAQCOM', 'VIXCLS']]
+               for k in ['AAPL_return', 'TSLA_return', 'AMD_return', 'META_return', 'range',
+       'gap', 'momentum_10', 'volatility_14']]
 }
 
 def load_pipeline(_session, bucket, key):
@@ -152,6 +154,7 @@ if submitted:
         display_explanation(input_df,session, aws_bucket)
     else:
         st.error(res)
+
 
 
 
