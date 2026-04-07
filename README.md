@@ -54,3 +54,10 @@ streamlit run Portfolio/StreamlitApp.py
 - Model achieved 0.78 ROC-AUC on test data
 - Improved recall on minority class by 35% using SMOTE
 - Generated actionable buy/sell signals aligned with market trends
+
+
+## 🖥️ Demo
+
+Interactive Streamlit dashboard for real-time prediction and model explainability.
+
+![Stock Prediction Demo](images/demo.png)
