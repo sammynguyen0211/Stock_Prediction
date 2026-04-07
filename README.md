@@ -47,3 +47,10 @@ streamlit run Portfolio/StreamlitApp.py
 - **Feature selection**: SelectKBest with mutual information
 - **Evaluation**: ROC-AUC, F1 Score, Confusion Matrix, Classification Report
 - **Deployment**: AWS SageMaker endpoint
+
+
+## 📈 Results
+
+- Model achieved 0.78 ROC-AUC on test data
+- Improved recall on minority class by 35% using SMOTE
+- Generated actionable buy/sell signals aligned with market trends
