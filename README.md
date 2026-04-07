@@ -1,6 +1,6 @@
 ## 📈 Stock Prediction
 
-Machine learning models to predict stock returns and generate buy/sell signals, with a focus on Bitcoin using technical indicators.
+Machine learning models to predict stock returns and generate buy/sell signals
 
 ## 🔍 Overview
 
